@@ -1,0 +1,49 @@
+/* .overflow-hidden:hover {
+    height: auto; /* Override the height to show the content */
+/*}*/
+
+.group-hover\:opacity-100:hover\:opacity-100 {
+    opacity: 100;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.transition-opacity {
+    transition-property: opacity;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.testimonial-list {
+    animation: moveRightToLeft 40s linear infinite;
+}
+
+.testimonial-item:nth-child(odd) {
+    animation: moveLeftToRight 40s linear infinite;
+}
